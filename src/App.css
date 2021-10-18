@@ -1,0 +1,42 @@
+.App {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #797676;
+    /* background: linear-gradient(45deg, rgb(156, 14, 156, midnightbule)); */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.list {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.items {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.btn {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  padding: 5px;
+  color: #000;
+  font-size: 18px;
+}
