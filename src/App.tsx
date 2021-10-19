@@ -6,7 +6,7 @@ import AppPage from './components/AppPage'
 import { ProtectRouter, UnProtectRouter } from './components/CustomRoute'
 import LandingPage from './components/LandingPage'
 import LoginPage from './components/LoginPage'
-import NavBar from './components/NavBar'
+import NavBar from './components/navbar/NavBar'
 const App: React.FC = () => {
     const { state, dispatch } = useAuth()
     //localstorage
@@ -32,7 +32,7 @@ const App: React.FC = () => {
                     <Route path="*" component={LoginPage} />
                 </Switch>
             </BrowserRouter>
-            {JSON.stringify(state)}
+            #debug state: {JSON.stringify(state)}
         </div>
     )
 }

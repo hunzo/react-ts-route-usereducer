@@ -3,10 +3,12 @@ import logo from '../logo512.png'
 
 const LandingPage: React.FC = () => {
     return (
-        <>
-            <p>Home</p>
-            <img src={logo} alt="logo" width="200px" />
-        </>
+        <div className="container">
+            <h1>Home Page</h1>
+            <p>
+                <img src={logo} alt="logo" width="200px" />
+            </p>
+        </div>
     )
 }
 

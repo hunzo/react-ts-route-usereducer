@@ -1,22 +1,23 @@
 import React from 'react'
-import { Link, NavLink} from 'react-router-dom'
-import '../App.css'
-import { useAuth } from '../AuthContext'
+import { Link } from 'react-router-dom'
+import './Navbar.css'
+import { useAuth } from '../../AuthContext'
 
 const NavBar: React.FC = () => {
-    const { state, dispatch } = useAuth()
+    const { dispatch } = useAuth()
     return (
         <nav>
-            <ul className="menu">
-                <li>
-                    <NavLink className="button" to="/home">Home</NavLink>
+            <a href="/">Logo</a>
+            <ul className="bar">
+                <li className="items">
+                    <Link to="/home">Home</Link>
                 </li>
-                <li >
-                    <NavLink className="button" to="/app">App</NavLink>
+                <li className="items">
+                    <Link to="/app">App</Link>
                 </li>
             </ul>
             <button
-                className="button"
+                className="nav-btn"
                 onClick={() =>
                     dispatch({
                         type: 'LOGOUT',

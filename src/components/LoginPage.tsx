@@ -7,7 +7,7 @@ const LoginPage: React.FC = () => {
     const history = useHistory()
     return (
         <>
-            <div>
+            <div className="container">
                 <p>Login Page</p>
                 <button onClick={() => {
                     const store = {

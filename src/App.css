@@ -1,35 +1,10 @@
 .App {
-    margin: 0;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
-  width: 100%;
-  float: left;
-}
-
-
-.menu {
-  margin: 0;
-  padding: 8px;
-  height: 20px;
-  background-color: #334a94;
-}
-
-.button {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-style: none;
-  color: #ffffff;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.button:link {
-  background-color: #334a94;
-  color: #ffffff;
-}
-
-.button:hover {
-  background-color: #786ed4;
+.container {
+  border: 1px solid #e1e1e1;
+  margin: 1rem;
+  padding: 1rem;
 }
